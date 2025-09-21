@@ -5427,6 +5427,49 @@
         .comms-network .connection-line {
             animation: dataFlow 4s linear infinite, spyTransmission 6s infinite !important;
         }
+        /* ===== FORM FIXES FOR TRANSMISSION TERMINAL ===== */
+        
+        /* Fix overlapping placeholder text */
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--color-muted-gray);
+            opacity: 0.6;
+            font-style: italic;
+            transition: opacity var(--transition-normal);
+        }
+
+        .form-group input:focus::placeholder,
+        .form-group textarea:focus::placeholder {
+            opacity: 0;
+        }
+
+        /* Fix transmit button cursor */
+        .transmit-btn {
+            cursor: pointer !important;
+        }
+
+        /* Improve form field spacing */
+        .form-group {
+            margin-bottom: calc(var(--spacing-xl) * 1.2);
+        }
+
+        .form-group label {
+            margin-bottom: var(--spacing-sm);
+            font-size: 0.85rem;
+        }
+
+        /* Light mode placeholder fixes */
+        body.light-theme .form-group input::placeholder,
+        body.light-theme .form-group textarea::placeholder {
+            color: #888888 !important;
+            opacity: 0.7 !important;
+        }
+
+        body.light-theme .form-group input:focus::placeholder,
+        body.light-theme .form-group textarea:focus::placeholder {
+            opacity: 0 !important;
+        }
+
     </style>
 </head>
 <body>
@@ -5859,25 +5902,25 @@
                         <form class="secure-form" id="secureForm" action="https://formspree.io/f/xnngaplg" method="POST">
                             <div class="form-group">
                                 <label for="operativeAlias">OPERATIVE ALIAS:</label>
-                                <input type="text" id="operativeAlias" name="name" required>
+                                <input type="text" id="operativeAlias" name="name" placeholder="Enter your codename..." required>
                                 <div class="input-line"></div>
                             </div>
 
                             <div class="form-group">
                                 <label for="secureEmail">SECURE EMAIL ADDRESS:</label>
-                                <input type="email" id="secureEmail" name="email" required>
+                                <input type="email" id="secureEmail" name="email" placeholder="agent@classified.gov" required>
                                 <div class="input-line"></div>
                             </div>
 
                             <div class="form-group">
                                 <label for="clearanceLevel">SUBJECT LINE [CLEARANCE LEVEL]:</label>
-                                <input type="text" id="clearanceLevel" name="subject" required>
+                                <input type="text" id="clearanceLevel" name="subject" placeholder="Mission briefing - TOP SECRET" required>
                                 <div class="input-line"></div>
                             </div>
 
                             <div class="form-group">
                                 <label for="encryptedMessage">MESSAGE [ENCRYPTED]:</label>
-                                <textarea id="encryptedMessage" name="message" rows="6" required></textarea>
+                                <textarea id="encryptedMessage" name="message" rows="6" placeholder="Begin encrypted transmission..." required></textarea>
                                 <div class="input-line"></div>
                             </div>
 
