@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Architect | Portfolio</title>
+    <meta name="description" content="Premium portfolio showcasing digital experiences and innovative web development">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursor-trail"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <span class="mono-text">DIGITAL_ARCHITECT.EXE</span>
+            </div>
+            <div class="loading-text">
+                <span id="loading-text-content">INITIALIZING SYSTEMS...</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-percentage" id="progress-percentage">0%</div>
+            </div>
+            <div class="loading-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Navigation -->
+    <header class="nav-header" id="nav-header">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text mono-text">&lt;DEV/&gt;</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="sound-toggle" id="sound-toggle" aria-label="Toggle sound effects">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+                <button class="nav-burger" id="nav-burger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+        <!-- Background Effects -->
+        <div class="background-effects">
+            <canvas class="matrix-rain" id="matrix-rain"></canvas>
+            <div class="particle-field" id="particle-field"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="mono-text">[ SYSTEM_ONLINE ]</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line" data-text="ARCHITECT OF">ARCHITECT OF</span>
+                        <span class="title-line glitch-text" data-text="DIGITAL EXPERIENCES">DIGITAL EXPERIENCES</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="typewriter" id="hero-typewriter">Where code meets creativity, and innovation becomes reality.</span>
+                    </p>
+                    <div class="hero-actions">
+                        <button class="cta-button primary" data-target="projects">
+                            <span class="button-text">EXPLORE MY UNIVERSE</span>
+                            <div class="button-glow"></div>
+                        </button>
+                        <button class="cta-button secondary" data-target="contact">
+                            <span class="button-text">INITIATE CONTACT</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <div class="profile-image">
+                            <img src="https://via.placeholder.com/300x300/0f3f0f/00ff41?text=PROFILE" alt="Profile" />
+                            <div class="profile-border"></div>
+                            <div class="profile-scan"></div>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <span class="stat-value mono-text">99.7%</span>
+                                <span class="stat-label">Code Quality</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value mono-text">∞</span>
+                                <span class="stat-label">Creativity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-number mono-text">01.</span>
+                        SYSTEM PROFILE
+                    </h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-catchphrase">
+                            <h3 class="catchphrase-text">
+                                <span class="highlight-text">DEVELOPER BY DAY,</span><br>
+                                <span class="highlight-text">INNOVATOR BY NIGHT</span>
+                            </h3>
+                        </div>
+                        <div class="about-description">
+                            <p>Turning coffee into clean code since 2020. I'm a passionate full-stack developer who believes that great software is not just about functionality—it's about creating experiences that inspire and empower users.</p>
+                            <p>With a background in both technical development and creative design, I bridge the gap between complex backend systems and intuitive user interfaces. Every project is an opportunity to push boundaries and explore new possibilities.</p>
+                        </div>
+                        <div class="about-timeline" id="about-timeline">
+                            <div class="timeline-item" data-year="2020">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Journey Begins</h4>
+                                    <p>Started coding journey with web fundamentals</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-year="2021">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Full-Stack Focus</h4>
+                                    <p>Mastered React, Node.js, and modern frameworks</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-year="2023">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Professional Growth</h4>
+                                    <p>Led development teams and shipped production apps</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-year="2025">
+                                <div class="timeline-marker active"></div>
+                                <div class="timeline-content">
+                                    <h4>Innovation Mode</h4>
+                                    <p>Exploring AI integration and advanced web technologies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="personality-rings">
+                            <div class="ring-item" data-skill="creativity" data-level="95">
+                                <div class="ring-container">
+                                    <svg class="ring-svg" viewBox="0 0 120 120">
+                                        <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                        <circle class="ring-progress" cx="60" cy="60" r="50"></circle>
+                                    </svg>
+                                    <div class="ring-content">
+                                        <span class="ring-percentage">95%</span>
+                                        <span class="ring-label">Creativity</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ring-item" data-skill="problem-solving" data-level="92">
+                                <div class="ring-container">
+                                    <svg class="ring-svg" viewBox="0 0 120 120">
+                                        <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                        <circle class="ring-progress" cx="60" cy="60" r="50"></circle>
+                                    </svg>
+                                    <div class="ring-content">
+                                        <span class="ring-percentage">92%</span>
+                                        <span class="ring-label">Problem Solving</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ring-item" data-skill="teamwork" data-level="88">
+                                <div class="ring-container">
+                                    <svg class="ring-svg" viewBox="0 0 120 120">
+                                        <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                        <circle class="ring-progress" cx="60" cy="60" r="50"></circle>
+                                    </svg>
+                                    <div class="ring-content">
+                                        <span class="ring-percentage">88%</span>
+                                        <span class="ring-label">Teamwork</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-number mono-text">02.</span>
+                        SKILL CONSTELLATION
+                    </h2>
+                </div>
+                <div class="skills-container">
+                    <div class="constellation-field" id="constellation-field">
+                        <!-- Skills will be dynamically generated -->
+                    </div>
+                    <div class="skills-legend">
+                        <div class="legend-item">
+                            <div class="legend-dot frontend"></div>
+                            <span>Frontend</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-dot backend"></div>
+                            <span>Backend</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-dot tools"></div>
+                            <span>Tools</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-dot design"></div>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-number mono-text">03.</span>
+                        PROJECT ARCHIVE
+                    </h2>
+                </div>
+                <div class="projects-filters">
+                    <button class="filter-btn active" data-filter="all">ALL PROJECTS</button>
+                    <button class="filter-btn" data-filter="web">WEB APPS</button>
+                    <button class="filter-btn" data-filter="mobile">MOBILE</button>
+                    <button class="filter-btn" data-filter="ui">UI/UX</button>
+                </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be dynamically generated -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-number mono-text">04.</span>
+                        INITIATE CONTACT
+                    </h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Ready to build something amazing together?</h3>
+                        <p class="contact-description">Whether you have a project in mind, want to collaborate, or just want to say hello, I'd love to hear from you. Let's create something extraordinary.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Full Name</label>
+                                <div class="form-border"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email Address</label>
+                                <div class="form-border"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required>
+                                <label for="subject">Subject</label>
+                                <div class="form-border"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message">Message</label>
+                                <div class="form-border"></div>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">SEND MESSAGE</span>
+                                <div class="btn-loading">
+                                    <div class="loading-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="btn-glow"></div>
+                            </button>
+                        </form>
+                        <div class="form-status" id="form-status"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-title">Project Title</h3>
+                    <div class="modal-tags" id="modal-tags"></div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img id="modal-image" src="" alt="Project Screenshot">
+                    </div>
+                    <div class="modal-description">
+                        <p id="modal-description">Project description goes here...</p>
+                        <div class="modal-tech" id="modal-tech"></div>
+                        <div class="modal-actions">
+                            <a href="#" class="modal-btn primary" id="modal-live" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                LAUNCH PROJECT
+                            </a>
+                            <a href="#" class="modal-btn secondary" id="modal-code" target="_blank">
+                                <i class="fab fa-github"></i>
+                                VIEW CODE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Konami Code Easter Egg -->
+    <div class="easter-egg" id="easter-egg">
+        <div class="matrix-overlay">
+            <canvas class="matrix-canvas" id="matrix-canvas"></canvas>
+        </div>
+        <div class="easter-content">
+            <h2 class="easter-title glitch-text">KONAMI CODE ACTIVATED</h2>
+            <p class="easter-subtitle">Welcome to the Matrix, Neo...</p>
+            <button class="easter-close" id="easter-close">EXIT MATRIX</button>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

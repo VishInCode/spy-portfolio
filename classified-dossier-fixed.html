@@ -14,9 +14,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- External Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
     <style>
         /* ===== CLASSIFIED DOSSIER - SPY THEME STYLES ===== */
         
@@ -5427,72 +5424,6 @@
         .comms-network .connection-line {
             animation: dataFlow 4s linear infinite, spyTransmission 6s infinite !important;
         }
-
-        /* Terminal-style inline form lines */
-        .terminal-line {
-            display: flex;
-            align-items: center;
-            margin-bottom: var(--spacing-lg);
-            font-family: var(--font-mono);
-            line-height: 1.4;
-        }
-
-        .terminal-message-line {
-            margin-bottom: var(--spacing-lg);
-            font-family: var(--font-mono);
-        }
-
-        .terminal-message-line .terminal-label {
-            display: block;
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .terminal-label {
-            color: var(--color-off-white);
-            font-size: 0.9rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            white-space: nowrap;
-            margin-right: var(--spacing-xs);
-        }
-
-        .terminal-input {
-            flex: 1;
-            background: transparent;
-            border: none;
-            color: var(--color-terminal-purple);
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-            outline: none;
-            border-bottom: 1px solid var(--color-border);
-            padding: var(--spacing-xs) 0;
-            transition: all var(--transition-normal);
-        }
-
-        .terminal-input:focus {
-            border-bottom-color: var(--color-terminal-purple);
-            color: var(--color-terminal-purple);
-            text-shadow: var(--subtle-glow);
-        }
-
-        .terminal-textarea {
-            width: 100%;
-            background: transparent;
-            border: 1px solid var(--color-border);
-            color: var(--color-terminal-purple);
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-            padding: var(--spacing-sm);
-            outline: none;
-            resize: vertical;
-            min-height: 120px;
-            transition: all var(--transition-normal);
-        }
-
-        .terminal-textarea:focus {
-            border-color: var(--color-terminal-purple);
-            text-shadow: var(--subtle-glow);
-        }
     </style>
 </head>
 <body>
@@ -5621,8 +5552,8 @@
                         <div class="profile-frame">
                             <div class="profile-image spy-enhanced">
                                 <div class="image-wrapper">
-                                    <video src="assets/videos/Timeline.mp4" alt="Operative Vishal Yadav - Standard Profile" class="primary-image" autoplay loop muted playsinline></video>
-                                    <img src="assets/images/profile.png" alt="Operative Vishal Yadav - Enhanced Profile" class="secondary-image">
+                                    <video src="Timeline.mp4" alt="Operative Vishal Yadav - Standard Profile" class="primary-image" autoplay loop muted playsinline></video>
+                                    <img src="profile.png" alt="Operative Vishal Yadav - Enhanced Profile" class="secondary-image">
                                 </div>
                                 <div class="professional-overlay">
                                     <div class="scan-beam"></div>
@@ -5830,7 +5761,7 @@
                                 <div class="security-level">TOP SECRET</div>
                             </div>
                             <div class="card-image">
-                                <img src="assets/images/ECOM.png" alt="E-Commerce Operation">
+                                <img src="ECOM.png" alt="E-Commerce Operation">
                                 <div class="image-overlay">
                                     <div class="overlay-text">VIEW DETAILS</div>
                                 </div>
@@ -5849,7 +5780,7 @@
                                 <div class="security-level">TOP SECRET</div>
                             </div>
                             <div class="card-image">
-                                <img src="assets/images/DIn.png" alt="Data Analysis Operation">
+                                <img src="DIn.png" alt="Data Analysis Operation">
                                 <div class="image-overlay">
                                     <div class="overlay-text">VIEW DETAILS</div>
                                 </div>
@@ -5868,7 +5799,7 @@
                                 <div class="security-level">DECLASSIFIED</div>
                             </div>
                             <div class="card-image">
-                                <img src="assets/images/Dosseir.png" alt="Portfolio Operation">
+                                <img src="Dosseir.png" alt="Portfolio Operation">
                                 <div class="image-overlay">
                                     <div class="overlay-text">VIEW DETAILS</div>
                                 </div>
@@ -5923,24 +5854,28 @@
                         </div>
 
                         <form class="secure-form" id="secureForm" action="https://formspree.io/f/xnngaplg" method="POST">
-                            <div class="terminal-line">
-                                <span class="terminal-label">OPERATIVE ALIAS: </span>
-                                <input type="text" id="operativeAlias" name="name" class="terminal-input" required>
+                            <div class="form-group">
+                                <label for="operativeAlias">OPERATIVE ALIAS:</label>
+                                <input type="text" id="operativeAlias" name="name" required>
+                                <div class="input-line"></div>
                             </div>
 
-                            <div class="terminal-line">
-                                <span class="terminal-label">SECURE EMAIL ADDRESS: </span>
-                                <input type="email" id="secureEmail" name="email" class="terminal-input" required>
+                            <div class="form-group">
+                                <label for="secureEmail">SECURE EMAIL ADDRESS:</label>
+                                <input type="email" id="secureEmail" name="email" required>
+                                <div class="input-line"></div>
                             </div>
 
-                            <div class="terminal-line">
-                                <span class="terminal-label">SUBJECT LINE [CLEARANCE LEVEL]: </span>
-                                <input type="text" id="clearanceLevel" name="subject" class="terminal-input" required>
+                            <div class="form-group">
+                                <label for="clearanceLevel">SUBJECT LINE [CLEARANCE LEVEL]:</label>
+                                <input type="text" id="clearanceLevel" name="subject" required>
+                                <div class="input-line"></div>
                             </div>
 
-                            <div class="terminal-message-line">
-                                <div class="terminal-label">MESSAGE [ENCRYPTED]:</div>
-                                <textarea id="encryptedMessage" name="message" rows="6" class="terminal-textarea" required></textarea>
+                            <div class="form-group">
+                                <label for="encryptedMessage">MESSAGE [ENCRYPTED]:</label>
+                                <textarea id="encryptedMessage" name="message" rows="6" required></textarea>
+                                <div class="input-line"></div>
                             </div>
 
                             <button type="submit" class="transmit-btn" id="transmitBtn">
