@@ -10,7 +10,7 @@ A sophisticated, spy-themed portfolio website featuring a classified dossier des
 
 **🔗 [View Live Site](https://vishincode.github.io/spy-portfolio/)**
 
-*Replace `VishInCode` with your actual GitHub username*
+ `VishInCode` 
 
 ## ✨ Features
 
