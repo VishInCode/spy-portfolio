@@ -1429,12 +1429,22 @@
             position: relative;
         }
 
+        .secure-link i {
+            font-size: 1.3rem;
+            z-index: 1;
+        }
+
         .secure-link:hover {
             color: var(--color-terminal-purple);
             border-color: var(--color-terminal-purple);
             background: rgba(157, 78, 221, 0.1);
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(157, 78, 221, 0.2);
+        }
+
+        .secure-link:hover i {
+            transform: scale(1.1);
+            text-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
         }
 
         .secure-link:active {
@@ -5502,6 +5512,18 @@
         .transmit-btn .btn-text {
             width: 100% !important;
         }
+
+        /* Footer icon enhancements */
+        .footer-redesign .secure-link i {
+            display: inline-block !important;
+            font-size: 1.4rem !important;
+            color: inherit !important;
+        }
+
+        .footer-redesign .secure-link:hover i {
+            transform: scale(1.15) !important;
+            text-shadow: 0 0 15px rgba(157, 78, 221, 0.6) !important;
+        }
     </style>
 </head>
 <body>
@@ -6117,13 +6139,13 @@
                 <div class="secure-links">
                     <div class="links-header">SECURE CHANNELS</div>
                     <div class="social-grid">
-                        <a href="https://github.com/yourusername" class="secure-link" target="_blank" title="GitHub">
+                        <a href="https://github.com/VishInCode" class="secure-link" target="_blank" title="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://linkedin.com/in/yourusername" class="secure-link" target="_blank" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/vishal-yadav-38b9ba343/" class="secure-link" target="_blank" title="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://twitter.com/yourusername" class="secure-link" target="_blank" title="Twitter">
+                        <a href="https://x.com/CodeWithVish" class="secure-link" target="_blank" title="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
                         <a href="#" class="secure-link email-link" title="Email" onclick="handleEmailClick()">
