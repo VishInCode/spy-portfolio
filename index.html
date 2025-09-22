@@ -5493,6 +5493,15 @@
             border-color: var(--color-terminal-purple);
             text-shadow: var(--subtle-glow);
         }
+
+        /* Button positioning fix */
+        .transmit-btn {
+            margin-top: var(--spacing-lg) !important;
+        }
+
+        .transmit-btn .btn-text {
+            width: 100% !important;
+        }
     </style>
 </head>
 <body>
@@ -5944,8 +5953,10 @@
                             </div>
 
                             <button type="submit" class="transmit-btn" id="transmitBtn">
-                                <i class="fas fa-lock"></i>
-                                <span class="btn-text">TRANSMIT SECURELY</span>
+                                <span class="btn-text">
+                                    <i class="fas fa-lock"></i>
+                                    TRANSMIT SECURELY
+                                </span>
                                 <div class="scanline"></div>
                             </button>
                         </form>
