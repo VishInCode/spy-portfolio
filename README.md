@@ -8,9 +8,9 @@ A sophisticated, spy-themed portfolio website featuring a classified dossier des
 
 ## 🎯 Live Demo
 
-**🔗 [View Live Site](https://yourusername.github.io/spy-portfolio)**
+**🔗 [View Live Site](https://vishincode.github.io/spy-portfolio/)**
 
-*Replace `yourusername` with your actual GitHub username*
+ `VishInCode` 
 
 ## ✨ Features
 
@@ -190,14 +190,14 @@ Having issues? Here are some common solutions:
 
 ## 🔗 Links
 
-- **Live Demo**: [Your GitHub Pages URL]
-- **Repository**: [Your GitHub Repository URL]
+- **Live Demo**: [https://vishincode.github.io/spy-portfolio/]
+- **Repository**: [https://github.com/VishInCode/spy-portfolio.git]
 - **Issues**: [Repository Issues Page]
 - **Documentation**: [This README]
 
 ---
 
-**Created with 🕵️ by [Your Name]**  
+**Created with 🕵️ by [Vishy]**  
 *Professional Data Scientist & Developer*
 
 > "In the world of data science, every algorithm is a mission, every dataset is classified, and every insight is a breakthrough." 
