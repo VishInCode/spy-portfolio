@@ -5524,6 +5524,253 @@
             transform: scale(1.15) !important;
             text-shadow: 0 0 15px rgba(157, 78, 221, 0.6) !important;
         }
+
+        /* ===== ENHANCED MOBILE OPTIMIZATIONS ===== */
+        
+        /* Mobile Navigation Improvements */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: var(--spacing-sm) var(--spacing-md);
+            }
+            
+            .logo {
+                font-size: 1.1rem !important;
+            }
+            
+            .nav-links {
+                gap: var(--spacing-xs) !important;
+            }
+            
+            .nav-link {
+                font-size: 0.85rem !important;
+                padding: var(--spacing-xs) var(--spacing-sm) !important;
+            }
+        }
+
+        /* Mobile Contact Section Optimization */
+        @media (max-width: 768px) {
+            .comms-hub {
+                flex-direction: column !important;
+                gap: var(--spacing-xl) !important;
+            }
+            
+            .transmission-terminal,
+            .comms-network {
+                flex: none !important;
+                width: 100% !important;
+            }
+            
+            .terminal-header {
+                padding: var(--spacing-sm) !important;
+            }
+            
+            .terminal-title {
+                font-size: 0.9rem !important;
+            }
+            
+            .terminal-line {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: var(--spacing-xs) !important;
+            }
+            
+            .terminal-label {
+                margin-bottom: var(--spacing-xs) !important;
+                margin-right: 0 !important;
+            }
+            
+            .terminal-input {
+                width: 100% !important;
+                margin-left: var(--spacing-sm) !important;
+            }
+            
+            .terminal-textarea {
+                margin-top: var(--spacing-xs) !important;
+            }
+            
+            .transmit-btn {
+                font-size: 0.9rem !important;
+                padding: var(--spacing-md) !important;
+            }
+        }
+
+        /* Mobile Projects Section */
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr !important;
+                gap: var(--spacing-lg) !important;
+            }
+            
+            .project-card {
+                margin-bottom: var(--spacing-lg) !important;
+            }
+            
+            .project-header h3 {
+                font-size: 1.1rem !important;
+            }
+            
+            .project-meta {
+                flex-wrap: wrap !important;
+                gap: var(--spacing-xs) !important;
+            }
+            
+            .tech-stack {
+                flex-wrap: wrap !important;
+            }
+            
+            .tech-tag {
+                font-size: 0.75rem !important;
+                padding: 0.25rem 0.5rem !important;
+            }
+        }
+
+        /* Mobile Skills Section */
+        @media (max-width: 768px) {
+            .skills-categories {
+                grid-template-columns: 1fr !important;
+                gap: var(--spacing-md) !important;
+            }
+            
+            .skill-category h3 {
+                font-size: 1rem !important;
+            }
+            
+            .skills-list {
+                gap: var(--spacing-xs) !important;
+            }
+            
+            .skill-item {
+                font-size: 0.85rem !important;
+                padding: var(--spacing-xs) var(--spacing-sm) !important;
+            }
+        }
+
+        /* Mobile Footer Enhancements */
+        @media (max-width: 768px) {
+            .footer-redesign {
+                padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg) !important;
+            }
+            
+            .mission-status-line {
+                font-size: 0.85rem !important;
+                text-align: center !important;
+                line-height: 1.3 !important;
+            }
+            
+            .social-grid {
+                justify-content: center !important;
+                gap: var(--spacing-md) !important;
+            }
+            
+            .secure-link {
+                width: 45px !important;
+                height: 45px !important;
+                font-size: 1.1rem !important;
+            }
+            
+            .copyright-line {
+                font-size: 0.75rem !important;
+                text-align: center !important;
+                line-height: 1.4 !important;
+                word-break: break-word !important;
+            }
+        }
+
+        /* Extra Small Mobile Devices */
+        @media (max-width: 480px) {
+            .hero-container {
+                padding: var(--spacing-md) var(--spacing-sm) !important;
+            }
+            
+            .profile-container {
+                width: 220px !important;
+                height: 280px !important;
+            }
+            
+            .profile-image {
+                width: 180px !important;
+                height: 180px !important;
+            }
+            
+            .title-accent {
+                font-size: clamp(1.3rem, 8vw, 1.8rem) !important;
+            }
+            
+            .hero-description {
+                font-size: 0.8rem !important;
+                line-height: 1.4 !important;
+            }
+            
+            .social-links-center {
+                gap: var(--spacing-sm) !important;
+            }
+            
+            .social-link {
+                width: 35px !important;
+                height: 35px !important;
+                font-size: 0.9rem !important;
+            }
+            
+            .cta-button {
+                font-size: 0.85rem !important;
+                padding: var(--spacing-sm) var(--spacing-md) !important;
+            }
+            
+            .terminal-title {
+                font-size: 0.8rem !important;
+            }
+            
+            .terminal-label {
+                font-size: 0.8rem !important;
+            }
+            
+            .terminal-input,
+            .terminal-textarea {
+                font-size: 0.85rem !important;
+            }
+            
+            .transmit-btn {
+                font-size: 0.8rem !important;
+                padding: var(--spacing-sm) !important;
+            }
+        }
+
+        /* Landscape Mobile Optimization */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .hero-container {
+                flex-direction: row !important;
+                min-height: 100vh !important;
+                align-items: center !important;
+            }
+            
+            .profile-container {
+                width: 250px !important;
+                height: 300px !important;
+            }
+            
+            .profile-image {
+                width: 200px !important;
+                height: 200px !important;
+            }
+        }
+
+        /* Touch-friendly improvements */
+        @media (max-width: 768px) {
+            .nav-link,
+            .cta-button,
+            .secure-link,
+            .social-link,
+            .transmit-btn {
+                min-height: 44px !important;
+                min-width: 44px !important;
+            }
+            
+            .terminal-input,
+            .terminal-textarea {
+                min-height: 44px !important;
+                font-size: 16px !important; /* Prevents zoom on iOS */
+            }
+        }
     </style>
 </head>
 <body>
@@ -5554,11 +5801,11 @@
                     </a></li>
                     <li><a href="#projects" class="nav-link">
                         <span class="nav-icon"><i class="fas fa-briefcase"></i></span>
-                        [03] CASES
+                        [03] PROJECTS
                     </a></li>
                     <li><a href="#contact" class="nav-link">
                         <span class="nav-icon"><i class="fas fa-satellite-dish"></i></span>
-                        [04] COMMS
+                        [04] CONTACT
                     </a></li>
                 </ul>
             </nav>
@@ -5621,11 +5868,11 @@
                         <div class="action-center">
                             <div class="hero-actions">
                                 <a href="#projects" class="cta-button primary">
-                                    <span>ACCESS CASE FILES</span>
+                                    <span>VIEW PROJECTS</span>
                                     <i class="fas fa-folder-open"></i>
                                 </a>
                                 <a href="https://drive.google.com/file/d/1QZ9V0vc6vBOpoTLxtCAMuXNxynAWp4aQ/view?usp=sharing" class="cta-button secondary" target="_blank">
-                                    <span>VIEW DOSSIER</span>
+                                    <span>VIEW RESUME</span>
                                     <i class="fas fa-eye"></i>
                                 </a>
                             </div>
@@ -5840,13 +6087,13 @@
             </div>
         </div>
 
-        <!-- Projects Section - Classified Operations -->
+        <!-- Projects Section -->
         <section class="section" id="projects">
             <div class="section-number">[03]</div>
             <div class="projects-container">
                 <div class="section-header">
-                    <h2 class="section-title">CLASSIFIED OPERATIONS</h2>
-                    <p class="section-subtitle">Declassified mission files and operational records</p>
+                    <h2 class="section-title">PROJECTS</h2>
+                    <p class="section-subtitle">Portfolio of work and development projects</p>
                 </div>
 
                 <div class="operations-wrapper">
@@ -5932,15 +6179,15 @@
             <div class="section-number">[04]</div>
             <div class="contact-container">
                 <div class="section-header">
-                    <h2 class="section-title">ESTABLISH SECURE CHANNEL</h2>
-                    <p class="section-subtitle">Initiate encrypted communication protocol</p>
+                    <h2 class="section-title">CONTACT ME</h2>
+                    <p class="section-subtitle">Get in touch for collaboration opportunities</p>
                 </div>
 
                 <div class="comms-hub">
                     <!-- Left Column: Transmission Terminal -->
                     <div class="transmission-terminal">
                         <div class="terminal-header">
-                            <div class="terminal-title">TRANSMISSION TERMINAL</div>
+                            <div class="terminal-title">CONTACT FORM</div>
                             <div class="status-lights">
                                 <div class="light green"></div>
                                 <div class="light green"></div>
@@ -5955,29 +6202,29 @@
 
                         <form class="secure-form" id="secureForm" action="https://formspree.io/f/xnngaplg" method="POST">
                             <div class="terminal-line">
-                                <span class="terminal-label">OPERATIVE ALIAS: </span>
+                                <span class="terminal-label">NAME: </span>
                                 <input type="text" id="operativeAlias" name="name" class="terminal-input" required>
                             </div>
 
                             <div class="terminal-line">
-                                <span class="terminal-label">SECURE EMAIL ADDRESS: </span>
+                                <span class="terminal-label">EMAIL ADDRESS: </span>
                                 <input type="email" id="secureEmail" name="email" class="terminal-input" required>
                             </div>
 
                             <div class="terminal-line">
-                                <span class="terminal-label">SUBJECT LINE [CLEARANCE LEVEL]: </span>
+                                <span class="terminal-label">SUBJECT: </span>
                                 <input type="text" id="clearanceLevel" name="subject" class="terminal-input" required>
                             </div>
 
                             <div class="terminal-message-line">
-                                <div class="terminal-label">MESSAGE [ENCRYPTED]:</div>
+                                <div class="terminal-label">MESSAGE:</div>
                                 <textarea id="encryptedMessage" name="message" rows="6" class="terminal-textarea" required></textarea>
                             </div>
 
                             <button type="submit" class="transmit-btn" id="transmitBtn">
                                 <span class="btn-text">
-                                    <i class="fas fa-lock"></i>
-                                    TRANSMIT SECURELY
+                                    <i class="fas fa-envelope"></i>
+                                    SEND MESSAGE
                                 </span>
                                 <div class="scanline"></div>
                             </button>
@@ -6102,12 +6349,12 @@
             </div>
         </section>
 
-        <!-- Final Spy Separator: Mission Complete -->
+        <!-- Final Section Separator -->
         <div class="spy-separator">
             <div class="separator-line"></div>
             <div class="separator-center">
                 <i class="fas fa-shield-alt separator-icon"></i>
-                <span class="separator-text">MISSION COMPLETE</span>
+                <span class="separator-text">THANK YOU</span>
                 <i class="fas fa-shield-alt separator-icon"></i>
             </div>
             <div class="separator-dots">
@@ -6122,22 +6369,22 @@
         <!-- Professional Footer Section -->
         <footer class="main-container">
             <div class="footer-redesign">
-                <!-- Mission Complete Header -->
+                <!-- Thank You Header -->
                 <div class="mission-conclusion">
-                    <span class="mission-status-line">// MISSION: PORTFOLIO REVIEW COMPLETE //</span>
+                    <span class="mission-status-line">// THANK YOU FOR VISITING MY PORTFOLIO //</span>
                 </div>
                 
                 <!-- Primary Call-to-Action -->
                 <div class="cta-section">
                     <button class="terminate-btn" id="terminate-btn">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <span>TERMINATE SESSION</span>
+                        <span>BACK TO TOP</span>
                     </button>
                 </div>
                 
                 <!-- Social/Professional Links -->
                 <div class="secure-links">
-                    <div class="links-header">SECURE CHANNELS</div>
+                    <div class="links-header">CONNECT WITH ME</div>
                     <div class="social-grid">
                         <a href="https://github.com/VishInCode" class="secure-link" target="_blank" title="GitHub">
                             <i class="fab fa-github"></i>
@@ -6618,13 +6865,13 @@
 
                 // Validate fields
                 if (!name || !email || !subject || !message) {
-                    showStatus('error', '// TRANSMISSION FAILED. INCOMPLETE DATA. VERIFY ALL FIELDS.');
+                    showStatus('error', '// PLEASE FILL ALL REQUIRED FIELDS.');
                     return;
                 }
 
                 // Start transmission animation
                 transmitBtn.classList.add('transmitting');
-                btnText.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ENCRYPTING...';
+                btnText.innerHTML = '<i class="fas fa-spinner fa-spin"></i> SENDING...';
                 transmitBtn.disabled = true;
 
                 // Submit to Formspree
@@ -6637,27 +6884,27 @@
                 })
                 .then(response => {
                     if (response.ok) {
-                        showStatus('success', '// TRANSMISSION RECEIVED. SECURE EMAIL SENT TO HANDLER. MISSION ACCOMPLISHED.');
+                        showStatus('success', '// MESSAGE SENT SUCCESSFULLY. THANK YOU FOR CONTACTING ME.');
                         form.reset();
                         playTerminalSound();
                     } else {
                         response.json().then(data => {
                             if (Object.hasOwnProperty.call(data, 'errors')) {
-                                showStatus('error', '// TRANSMISSION FAILED. DATA VALIDATION ERROR. CHECK YOUR INPUTS.');
+                                showStatus('error', '// VALIDATION ERROR. PLEASE CHECK YOUR INPUTS.');
                             } else {
-                                showStatus('error', '// TRANSMISSION FAILED. SECURE LINE COMPROMISED. TRY AGAIN.');
+                                showStatus('error', '// SEND FAILED. PLEASE TRY AGAIN.');
                             }
                         });
                     }
                 })
                 .catch(error => {
                     console.error('Error:', error);
-                    showStatus('error', '// TRANSMISSION FAILED. NETWORK ERROR. VERIFY CONNECTION.');
+                    showStatus('error', '// NETWORK ERROR. PLEASE CHECK YOUR CONNECTION.');
                 })
                 .finally(() => {
                     // Reset button
                     transmitBtn.classList.remove('transmitting');
-                    btnText.innerHTML = '<i class="fas fa-lock"></i> TRANSMIT SECURELY';
+                    btnText.innerHTML = '<i class="fas fa-envelope"></i> SEND MESSAGE';
                     transmitBtn.disabled = false;
                 });
             });
